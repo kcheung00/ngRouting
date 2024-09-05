@@ -11,7 +11,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './user.component.css',
 })
 export class UserComponent {
-  user = input.required<User>();
+  user = input.required<User>(); // signal input
 
   imagePath = computed(() => 'users/' + this.user().avatar);
 }
